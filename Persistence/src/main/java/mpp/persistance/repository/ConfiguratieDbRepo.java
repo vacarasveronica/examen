@@ -1,9 +1,7 @@
 package mpp.persistance.repository;
 
-
-
-import mpp.model.User;
-import mpp.persistance.UserRepoInterface;
+import mpp.model.Configuratie;
+import mpp.persistance.ConfiguratieRepoInterface;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import org.hibernate.Session;
@@ -11,38 +9,38 @@ import org.hibernate.Transaction;
 
 import java.util.List;
 
-public class UserDbRepo implements UserRepoInterface {
+public class ConfiguratieDbRepo implements ConfiguratieRepoInterface {
     private static final Logger logger = LogManager.getLogger();
 
     @Override
-    public User findOne(Integer id) {
-        logger.traceEntry("Finding user with id: {}", id);
+    public Configuratie findOne(Integer id) {
+        logger.traceEntry("Finding configuratie with id: {}", id);
         try (Session session = HibernateUtils.getSessionFactory().openSession()) {
-            User u = session.get(User.class, id);
-            logger.traceExit(u);
-            return u;
+            Configuratie configuratie = session.get(Configuratie.class, id);
+            logger.traceExit(configuratie);
+            return configuratie;
         } catch (Exception e) {
-            logger.error("Error finding user with id: " + id, e);
+            logger.error("Error finding configuratie with id: " + id, e);
             return null;
         }
     }
 
     @Override
-    public Iterable<User> findAll() {
-        logger.traceEntry("Finding all users");
+    public Iterable<Configuratie> findAll() {
+        logger.traceEntry("Finding all configuratii");
         try (Session session = HibernateUtils.getSessionFactory().openSession()) {
-            List<User> u = session.createQuery("from User", User.class).list();
-            logger.traceExit(u);
-            return u;
+            List<Configuratie> configuratii = session.createQuery("from Configuratie", Configuratie.class).list();
+            logger.traceExit(configuratii);
+            return configuratii;
         } catch (Exception e) {
-            logger.error("Error finding all users", e);
+            logger.error("Error finding all configuratii", e);
             return List.of();
         }
     }
 
     @Override
-    public User save(User entity) {
-        logger.traceEntry("Saving user {}", entity);
+    public Configuratie save(Configuratie entity) {
+        logger.traceEntry("Saving configuratie {}", entity);
         Transaction tx = null;
         try (Session session = HibernateUtils.getSessionFactory().openSession()) {
             tx = session.beginTransaction();
@@ -52,34 +50,34 @@ public class UserDbRepo implements UserRepoInterface {
             return entity;
         } catch (Exception e) {
             if (tx != null) tx.rollback();
-            logger.error("Error saving user", e);
+            logger.error("Error saving configuratie", e);
             return null;
         }
     }
 
     @Override
-    public User delete(Integer id) {
-        logger.traceEntry("Deleting user with id: {}", id);
+    public Configuratie delete(Integer id) {
+        logger.traceEntry("Deleting configuratie with id: {}", id);
         try (Session session = HibernateUtils.getSessionFactory().openSession()) {
-            User u = session.get(User.class, id);
-            if (u != null) {
+            Configuratie c = session.get(Configuratie.class, id);
+            if (c != null) {
                 Transaction tx = session.beginTransaction();
-                session.remove(u);
+                session.remove(c);
                 tx.commit();
-                logger.traceExit(u);
-                return u;
+                logger.traceExit(c);
+                return c;
             }
-            logger.info("User with id {} not found", id);
+            logger.info("Configuratie with id {} not found", id);
             return null;
         } catch (Exception e) {
-            logger.error("Error deleting user with id: " + id, e);
+            logger.error("Error deleting configuratie with id: " + id, e);
             return null;
         }
     }
 
     @Override
-    public User update(User entity) {
-        logger.traceEntry("Updating user {}", entity);
+    public Configuratie update(Configuratie entity) {
+        logger.traceEntry("Updating configuratie {}", entity);
         Transaction tx = null;
         try (Session session = HibernateUtils.getSessionFactory().openSession()) {
             tx = session.beginTransaction();
@@ -89,10 +87,8 @@ public class UserDbRepo implements UserRepoInterface {
             return entity;
         } catch (Exception e) {
             if (tx != null) tx.rollback();
-            logger.error("Error updating user", e);
+            logger.error("Error updating configuratie", e);
             return null;
         }
     }
 }
-
-

@@ -1,6 +1,10 @@
 package mpp;
 
+import mpp.persistance.ConfiguratieRepoInterface;
+import mpp.persistance.JocRepoInterface;
 import mpp.persistance.UserRepoInterface;
+import mpp.persistance.repository.ConfiguratieDbRepo;
+import mpp.persistance.repository.JocDbRepo;
 import mpp.persistance.repository.UserDbRepo;
 import mpp.server.ServicesImpl;
 import mpp.network.utils.AbstractServer;
@@ -33,8 +37,10 @@ public class StartJsonServer {
             System.err.println("Cannot find server.properties "+e);
             return;
         }
-        UserRepoInterface userRepo = new UserDbRepo(serverProps);
-        IServices serverImpl = new ServicesImpl(userRepo);
+        UserRepoInterface userRepo = new UserDbRepo();
+        ConfiguratieRepoInterface configRepo = new ConfiguratieDbRepo();
+        JocRepoInterface jocRepo = new JocDbRepo(serverProps);
+        IServices serverImpl = new ServicesImpl(userRepo,configRepo,jocRepo);
         int serverPort = defaultPort;
         try {
             serverPort = Integer.parseInt(serverProps.getProperty("server.port"));

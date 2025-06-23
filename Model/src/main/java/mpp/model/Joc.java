@@ -1,14 +1,16 @@
 package mpp.model;
 
+import java.time.LocalDateTime;
+
 public class Joc extends Entitate<Integer>{
     private User user;
     private Configuratie configuratie;
     private Integer nrPuncte;
-    private Integer timpIncepere;
+    private LocalDateTime timpIncepere;
     private String literePropuse;
     private String litereGenerate;
 
-    public Joc(User user, Configuratie configuratie,Integer nrPuncte,Integer timpIncepere,String literePropuse,String litereGenerate) {
+    public Joc(User user, Configuratie configuratie,Integer nrPuncte,LocalDateTime timpIncepere,String literePropuse,String litereGenerate) {
         this.user = user;
         this.configuratie = configuratie;
         this.nrPuncte = nrPuncte;
@@ -34,10 +36,10 @@ public class Joc extends Entitate<Integer>{
     public void setNrPuncte(Integer nrPuncte) {
         this.nrPuncte = nrPuncte;
     }
-    public Integer getTimpIncepere() {
+    public LocalDateTime getTimpIncepere() {
         return timpIncepere;
     }
-    public void setTimpIncepere(Integer timpIncepere) {
+    public void setTimpIncepere(LocalDateTime timpIncepere) {
         this.timpIncepere = timpIncepere;
     }
     public String getLiterePropuse() {

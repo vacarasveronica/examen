@@ -1,6 +1,8 @@
 package mpp.network.jsonprotocol;
 
 import com.google.gson.*;
+import mpp.model.Configuratie;
+import mpp.model.Joc;
 import mpp.model.User;
 import mpp.services.AppException;
 import mpp.services.IObserver;
@@ -33,11 +35,10 @@ public class ServicesJsonProxy implements IServices {
     public ServicesJsonProxy(String host, int port) {
         this.host = host;
         this.port = port;
-        this.gsonFormatter = new GsonBuilder().create();
-//        gsonFormatter = new GsonBuilder()
-//                .registerTypeAdapter(LocalDateTime.class, (JsonSerializer<LocalDateTime>) (src, typeOfSrc, context) -> new JsonPrimitive(src.format(DateTimeFormatter.ISO_LOCAL_DATE_TIME)))
-//                .registerTypeAdapter(LocalDateTime.class, (JsonDeserializer<LocalDateTime>) (json, typeOfT, context) -> LocalDateTime.parse(json.getAsString(), DateTimeFormatter.ISO_LOCAL_DATE_TIME))
-//                .create();
+        gsonFormatter = new GsonBuilder()
+                .registerTypeAdapter(LocalDateTime.class, (JsonSerializer<LocalDateTime>) (src, typeOfSrc, context) -> new JsonPrimitive(src.format(DateTimeFormatter.ISO_LOCAL_DATE_TIME)))
+                .registerTypeAdapter(LocalDateTime.class, (JsonDeserializer<LocalDateTime>) (json, typeOfT, context) -> LocalDateTime.parse(json.getAsString(), DateTimeFormatter.ISO_LOCAL_DATE_TIME))
+                .create();
         qresponses = new LinkedBlockingQueue<>();
         try {
             initializeConnection();  // Inițializează conexiunea la server
@@ -147,35 +148,35 @@ public class ServicesJsonProxy implements IServices {
         return response.getUsers();
     }
 
-//    @Override
-//    public Iterable<Configuratie> findAllConfiguratie() throws IOException, InterruptedException, AppException {
-//        sendRequest(JsonProtocolUtils.createGetAllConfiguratiiRequest());
-//        Response response = readResponse();
-//        if (response.getType() == ResponseType.ERROR) {
-//            throw new AppException(response.getErrorMessage());
-//        }
-//        return response.getConfiguratii();
-//    }
-//
-//    @Override
-//    public Iterable<Joc> findAllJoc() throws IOException, InterruptedException, AppException {
-//        sendRequest(JsonProtocolUtils.createGetAllJocuriRequest());
-//        Response response = readResponse();
-//        if (response.getType() == ResponseType.ERROR) {
-//            throw new AppException(response.getErrorMessage());
-//        }
-//        return response.getJocuri();
-//    }
-//
-//    @Override
-//    public Joc saveJoc(Joc joc) throws AppException, IOException, InterruptedException {
-//        sendRequest(JsonProtocolUtils.createSaveGameRequest(joc));
-//        Response response = readResponse();
-//        if (response.getType() == ResponseType.ERROR) {
-//            throw new AppException(response.getErrorMessage());
-//        }
-//        return joc;
-//    }
+    @Override
+    public Iterable<Configuratie> findAllConfiguratie() throws IOException, InterruptedException, AppException {
+        sendRequest(JsonProtocolUtils.createGetAllConfiguratiiRequest());
+        Response response = readResponse();
+        if (response.getType() == ResponseType.ERROR) {
+            throw new AppException(response.getErrorMessage());
+        }
+        return response.getConfiguratii();
+    }
+
+    @Override
+    public Iterable<Joc> findAllJoc() throws IOException, InterruptedException, AppException {
+        sendRequest(JsonProtocolUtils.createGetAllJocuriRequest());
+        Response response = readResponse();
+        if (response.getType() == ResponseType.ERROR) {
+            throw new AppException(response.getErrorMessage());
+        }
+        return response.getJocuri();
+    }
+
+    @Override
+    public Joc saveJoc(Joc joc) throws AppException, IOException, InterruptedException {
+        sendRequest(JsonProtocolUtils.createSaveGameRequest(joc));
+        Response response = readResponse();
+        if (response.getType() == ResponseType.ERROR) {
+            throw new AppException(response.getErrorMessage());
+        }
+        return joc;
+    }
 
     /* TODO 3: ADD OBSERVER UPDATES*/
     private void handleUpdate(Response response) {

@@ -2,13 +2,15 @@ package mpp.network.jsonprotocol;
 
 // TODO 1: IMPORT MODELS FOR REQUEST CLASS
 
+import mpp.model.Joc;
+
 public class Request {
 
     private RequestType type;
     private String stringR;
     private Long aLong;
     private String alias;
-    //private Joc joc;
+    private Joc joc;
 
     // TODO 2: ADD MODELS FOR REQUEST CLASS
 
@@ -38,13 +40,13 @@ public class Request {
         this.aLong = aLong;
     }
 
+    public Joc getJoc(){
+        return joc;
+    }
+    public void setJoc(Joc joc){
+        this.joc = joc;
+    }
 
-//    public Joc getJoc(){
-//        return joc;
-//    }
-//    public void setJoc(Joc joc){
-//        this.joc = joc;
-//    }
     public String getAlias() {
         return alias;
     }

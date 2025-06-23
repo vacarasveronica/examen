@@ -2,6 +2,8 @@ package mpp.network.jsonprotocol;
 
 
 import com.google.gson.*;
+import mpp.model.Configuratie;
+import mpp.model.Joc;
 import mpp.model.User;
 import mpp.services.IObserver;
 import mpp.services.IServices;
@@ -27,11 +29,10 @@ public class ClientJsonWorker implements Runnable, IObserver {
     public ClientJsonWorker(IServices server, Socket connection) {
         this.server = server;
         this.connection = connection;
-        this.gsonFormatter = new GsonBuilder().create();
-//        gsonFormatter = new GsonBuilder()
-//                .registerTypeAdapter(LocalDateTime.class, (JsonSerializer<LocalDateTime>) (src, typeOfSrc, context) -> new JsonPrimitive(src.format(DateTimeFormatter.ISO_LOCAL_DATE_TIME)))
-//                .registerTypeAdapter(LocalDateTime.class, (JsonDeserializer<LocalDateTime>) (json, typeOfT, context) -> LocalDateTime.parse(json.getAsString(), DateTimeFormatter.ISO_LOCAL_DATE_TIME))
-//                .create();
+        gsonFormatter = new GsonBuilder()
+                .registerTypeAdapter(LocalDateTime.class, (JsonSerializer<LocalDateTime>) (src, typeOfSrc, context) -> new JsonPrimitive(src.format(DateTimeFormatter.ISO_LOCAL_DATE_TIME)))
+                .registerTypeAdapter(LocalDateTime.class, (JsonDeserializer<LocalDateTime>) (json, typeOfT, context) -> LocalDateTime.parse(json.getAsString(), DateTimeFormatter.ISO_LOCAL_DATE_TIME))
+                .create();
         try {
             input = new BufferedReader(new InputStreamReader(connection.getInputStream()));
             output = new BufferedWriter(new OutputStreamWriter(connection.getOutputStream()));
@@ -45,6 +46,10 @@ public class ClientJsonWorker implements Runnable, IObserver {
         while (connected) {
             try {
                 String requestLine = input.readLine();
+                if (requestLine == null || requestLine.isEmpty()) {
+                    System.out.println("Primit json gol de la client, ignorăm...");
+                    continue; // Sare peste și așteaptă următorul mesaj
+                }
                 Request request = gsonFormatter.fromJson(requestLine, Request.class);
                 Response response = handleRequest(request);
                 if (response != null) {
@@ -79,16 +84,17 @@ public class ClientJsonWorker implements Runnable, IObserver {
                 return handleLogin(request);
             case GET_ALL_USERS:
                 return handleGetAllUsers();
-//            case GET_ALL_CONFIGURATII:
-//                return handleGetAllConfiguratii();
-//            case GET_ALL_JOCURI:
-//                return handleGetAllJocuri();
-//            case SAVE_JOC:
-//                return handleSaveJoc(request);
+            case GET_ALL_CONFIGURATII:
+                return handleGetAllConfiguratii();
+            case GET_ALL_JOCURI:
+                return handleGetAllJocuri();
+            case SAVE_JOC:
+                return handleSaveJoc(request);
             default:
                 return JsonProtocolUtils.createErrorResponse("Unknown request type: " + request.getType());
         }
     }
+
 
     private void sendResponse(Response response) throws IOException {
         logger.traceEntry("sending response");
@@ -126,4 +132,53 @@ public class ClientJsonWorker implements Runnable, IObserver {
             return JsonProtocolUtils.createErrorResponse(e.getMessage());
         }
     }
+
+    private Response handleGetAllConfiguratii() {
+        logger.traceEntry("handling getAllConf request");
+        try {
+            System.out.println("SERVER: Handling GET_ALL_CONFIGURATII");
+            Iterable<Configuratie> configuratii;
+            synchronized (server) {
+                configuratii = server.findAllConfiguratie();
+            }
+            return JsonProtocolUtils.createGetAllConfiguratiiResponse(configuratii);
+        } catch (Exception e) {
+            return JsonProtocolUtils.createErrorResponse(e.getMessage());
+        }
+    }
+
+    private Response handleGetAllJocuri() {
+        logger.traceEntry("handling getAllJocuri request");
+        try {
+            System.out.println("SERVER: Handling GET_ALL_Jocuri");
+            Iterable<Joc> jocuri;
+            synchronized (server) {
+                jocuri = server.findAllJoc();
+            }
+            return JsonProtocolUtils.createGetAllJocuriResponse(jocuri);
+        } catch (Exception e) {
+            return JsonProtocolUtils.createErrorResponse(e.getMessage());
+        }
+    }
+
+    private Response handleSaveJoc(Request request) {
+        try {
+            server.saveJoc(request.getJoc());
+            return okResponse;
+        } catch (Exception e) {
+            return JsonProtocolUtils.createErrorResponse(e.getMessage());
+        }
+    }
+
+
+
+//    @Override
+//    public void gameAdded(Joc j) throws InterruptedException {
+//        Response response = JsonProtocolUtils.createSaveGameResponse(j);
+//        try {
+//            sendResponse(response);
+//        } catch (IOException e) {
+//            e.printStackTrace();
+//        }
+//    }
 }
