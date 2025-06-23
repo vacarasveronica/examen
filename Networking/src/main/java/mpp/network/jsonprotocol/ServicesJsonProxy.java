@@ -180,19 +180,18 @@ public class ServicesJsonProxy implements IServices {
 
     /* TODO 3: ADD OBSERVER UPDATES*/
     private void handleUpdate(Response response) {
-//        if (response.getType() == ResponseType.SAVE_JOC) {
-//            Joc game = response.getJoc();
-//            try {
-//                client.gameAdded(game);
-//            } catch (InterruptedException e) {
-//                e.printStackTrace();
-//            }
-//        }
+        if (response.getType() == ResponseType.SAVE_JOC) {
+            Joc game = response.getJoc();
+            try {
+                client.gameAdded(game);
+            } catch (InterruptedException e) {
+                e.printStackTrace();
+            }
+        }
     }
 
     private boolean isUpdate(Response response) {
-//        return response.getType() == ResponseType.SAVE_JOC;
-        return false;
+        return response.getType() == ResponseType.SAVE_JOC;
     }
 
 

@@ -61,8 +61,19 @@ public class ServicesImpl implements IServices {
     @Override
     public Joc saveJoc(Joc joc) throws AppException, IOException, InterruptedException {
         Joc j = jocRepo.save(joc);
-        //notifyObservers(joc);
+        notifyObservers(joc);
         return j;
+    }
+
+    // Metoda pentru a notifica observatorii
+    public synchronized void notifyObservers(Joc j) {
+        for (IObserver observer : loggedClients.values()) {
+            try {
+                observer.gameAdded(j);
+            } catch (InterruptedException e) {
+                e.printStackTrace();
+            }
+        }
     }
 
 }

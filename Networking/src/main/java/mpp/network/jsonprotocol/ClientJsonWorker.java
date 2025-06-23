@@ -172,13 +172,13 @@ public class ClientJsonWorker implements Runnable, IObserver {
 
 
 
-//    @Override
-//    public void gameAdded(Joc j) throws InterruptedException {
-//        Response response = JsonProtocolUtils.createSaveGameResponse(j);
-//        try {
-//            sendResponse(response);
-//        } catch (IOException e) {
-//            e.printStackTrace();
-//        }
-//    }
+    @Override
+    public void gameAdded(Joc j) throws InterruptedException {
+        Response response = JsonProtocolUtils.createSaveGameResponse(j);
+        try {
+            sendResponse(response);
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+    }
 }

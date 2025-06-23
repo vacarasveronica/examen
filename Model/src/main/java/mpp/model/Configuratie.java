@@ -49,4 +49,7 @@ public class Configuratie extends Entitate<Integer> {
     public Integer getNumar4() {
         return numar4;
     }
+    public void setNumar4(Integer numar4) {
+        this.numar4 = numar4;
+    }
 }

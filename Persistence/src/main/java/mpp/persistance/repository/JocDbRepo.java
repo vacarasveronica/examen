@@ -33,7 +33,7 @@ public class JocDbRepo implements JocRepoInterface {
         try (PreparedStatement preStmt = con.prepareStatement(
                 "SELECT U.id AS userid, U.alias, " +
                         "C.id AS configuratieid, C.litere, C.numar1, C.numar2, C.numar3, C.numar4, " +
-                        "J.userId, J.configuratieId, J.timpIncepere, J.literePropuse, J.litereGenerate,J.numarPuncte " +
+                        "J.userId, J.configuratieId, J.timpIncepere, J.literePropuse, J.litereGenerate,J.nrPuncte " +
                         "FROM joc J " +
                         "INNER JOIN configuratie C ON J.configuratieId = C.id " +
                         "INNER JOIN users U ON J.userId = U.id " +
@@ -80,7 +80,7 @@ public class JocDbRepo implements JocRepoInterface {
         try (PreparedStatement preStmt = con.prepareStatement(
                 "SELECT J.id AS jocid, U.id AS userid, U.alias, " +
                         "C.id AS configuratieid, C.litere, C.numar1, C.numar2, C.numar3, C.numar4, " +
-                        "J.userId, J.configuratieId, J.timpIncepere, J.literePropuse, J.litereGenerate,J.numarPuncte " +
+                        "J.userId, J.configuratieId, J.timpIncepere, J.literePropuse, J.litereGenerate,J.nrPuncte " +
                         "FROM joc J " +
                         "INNER JOIN configuratie C ON J.configuratieId = C.id " +
                         "INNER JOIN users U ON J.userId = U.id "
@@ -133,6 +133,7 @@ public class JocDbRepo implements JocRepoInterface {
             preStmt.setString(3, entity.getTimpIncepere().toString());
             preStmt.setString(4, entity.getLiterePropuse());
             preStmt.setString(5, entity.getLitereGenerate());
+            preStmt.setInt(6, entity.getNrPuncte());
 
             preStmt.executeUpdate();
 
