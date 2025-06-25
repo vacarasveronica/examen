@@ -23,5 +23,6 @@ public class ConfiguratieController {
             return ResponseEntity.badRequest().body(e.getMessage());
         }
     }
+    //AD
 
 }
