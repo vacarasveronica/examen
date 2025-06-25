@@ -1,0 +1,250 @@
+2025-06-23 11:02:16 [main] INFO  mpp.StartJsonServer - Server starting ...
+2025-06-23 11:02:16 [main] INFO  mpp.persistance.repository.JocDbRepo - Initializing UtilizatorRepo with properties: {server.port=55556, jdbc.url=jdbc:sqlite:dbs4din2024.db, jdbc.driver=org.sqlite.JDBC} 
+2025-06-23 11:02:16 [main] INFO  mpp.server.ServicesImpl - Initializing ServicesImpl
+2025-06-23 11:02:28 [JavaFX Application Thread] INFO  mpp.client.StartJsonClient - In start
+2025-06-23 11:03:26 [main] INFO  mpp.StartJsonServer - Server starting ...
+2025-06-23 11:03:26 [main] INFO  mpp.persistance.repository.JocDbRepo - Initializing UtilizatorRepo with properties: {server.port=55556, jdbc.url=jdbc:sqlite:dbs4din2024.db, jdbc.driver=org.sqlite.JDBC} 
+2025-06-23 11:03:26 [main] INFO  mpp.server.ServicesImpl - Initializing ServicesImpl
+2025-06-23 11:03:32 [JavaFX Application Thread] INFO  mpp.client.StartJsonClient - In start
+2025-06-23 11:03:36 [Thread-0] TRACE mpp.persistance.repository.UserDbRepo - Enter Finding all users
+2025-06-23 11:03:36 [Thread-0] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.4.4.Final
+2025-06-23 11:03:36 [Thread-0] INFO  org.hibernate.cfg.Environment - HHH000205: Loaded properties from resource hibernate.properties: {hibernate.format_sql=true, jakarta.persistence.jdbc.driver=org.sqlite.JDBC, hibernate.dialect=org.hibernate.community.dialect.SQLiteDialect, hibernate.highlight_sql=true, jakarta.persistence.jdbc.url=jdbc:sqlite:dbs4din2024.db, hibernate.show_sql=true, jakarta.persistence.schema-generation.database.action=update}
+2025-06-23 11:03:36 [Thread-0] INFO  org.hibernate.cache.internal.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2025-06-23 11:03:36 [Thread-0] WARN  org.hibernate.orm.connections.pooling - HHH10001002: Using built-in connection pool (not intended for production use)
+2025-06-23 11:03:36 [Thread-0] INFO  org.hibernate.orm.connections.pooling - HHH10001005: Loaded JDBC driver class: org.sqlite.JDBC
+2025-06-23 11:03:36 [Thread-0] INFO  org.hibernate.orm.connections.pooling - HHH10001012: Connecting with JDBC URL [jdbc:sqlite:dbs4din2024.db]
+2025-06-23 11:03:36 [Thread-0] INFO  org.hibernate.orm.connections.pooling - HHH10001001: Connection properties: {}
+2025-06-23 11:03:36 [Thread-0] INFO  org.hibernate.orm.connections.pooling - HHH10001003: Autocommit mode: false
+2025-06-23 11:03:36 [Thread-0] INFO  org.hibernate.orm.connections.pooling - HHH10001115: Connection pool size: 20 (min=1)
+2025-06-23 11:03:37 [Thread-0] INFO  org.hibernate.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.0.Final
+2025-06-23 11:03:37 [Thread-0] INFO  org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-06-23 11:03:37 [Thread-0] INFO  org.hibernate.orm.connections.access - HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@3f156af2] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
+2025-06-23 11:03:37 [Thread-0] TRACE mpp.persistance.repository.UserDbRepo - Exit with([mpp.model.User@2c7aa759, mpp.model.User@4a3d608d])
+2025-06-23 11:03:37 [JavaFX Application Thread] INFO  mpp.client.gui.LoginController - a gasit ceva
+2025-06-23 12:16:55 [main] INFO  mpp.StartJsonServer - Server starting ...
+2025-06-23 12:16:55 [main] INFO  mpp.persistance.repository.JocDbRepo - Initializing UtilizatorRepo with properties: {server.port=55556, jdbc.url=jdbc:sqlite:dbs4din2024.db, jdbc.driver=org.sqlite.JDBC} 
+2025-06-23 12:16:55 [main] INFO  mpp.server.ServicesImpl - Initializing ServicesImpl
+2025-06-23 12:17:47 [main] INFO  mpp.StartJsonServer - Server starting ...
+2025-06-23 12:17:47 [main] INFO  mpp.persistance.repository.JocDbRepo - Initializing UtilizatorRepo with properties: {server.port=55556, jdbc.url=jdbc:sqlite:dbs4din2024.db, jdbc.driver=org.sqlite.JDBC} 
+2025-06-23 12:17:47 [main] INFO  mpp.server.ServicesImpl - Initializing ServicesImpl
+2025-06-23 12:17:58 [JavaFX Application Thread] INFO  mpp.client.StartJsonClient - In start
+2025-06-23 12:18:01 [Thread-0] TRACE mpp.persistance.repository.UserDbRepo - Enter Finding all users
+2025-06-23 12:18:01 [Thread-0] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.4.4.Final
+2025-06-23 12:18:01 [Thread-0] INFO  org.hibernate.cfg.Environment - HHH000205: Loaded properties from resource hibernate.properties: {hibernate.format_sql=true, jakarta.persistence.jdbc.driver=org.sqlite.JDBC, hibernate.dialect=org.hibernate.community.dialect.SQLiteDialect, hibernate.highlight_sql=true, jakarta.persistence.jdbc.url=jdbc:sqlite:dbs4din2024.db, hibernate.show_sql=true, jakarta.persistence.schema-generation.database.action=update}
+2025-06-23 12:18:01 [Thread-0] INFO  org.hibernate.cache.internal.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2025-06-23 12:18:01 [Thread-0] WARN  org.hibernate.orm.connections.pooling - HHH10001002: Using built-in connection pool (not intended for production use)
+2025-06-23 12:18:01 [Thread-0] INFO  org.hibernate.orm.connections.pooling - HHH10001005: Loaded JDBC driver class: org.sqlite.JDBC
+2025-06-23 12:18:01 [Thread-0] INFO  org.hibernate.orm.connections.pooling - HHH10001012: Connecting with JDBC URL [jdbc:sqlite:dbs4din2024.db]
+2025-06-23 12:18:01 [Thread-0] INFO  org.hibernate.orm.connections.pooling - HHH10001001: Connection properties: {}
+2025-06-23 12:18:01 [Thread-0] INFO  org.hibernate.orm.connections.pooling - HHH10001003: Autocommit mode: false
+2025-06-23 12:18:01 [Thread-0] INFO  org.hibernate.orm.connections.pooling - HHH10001115: Connection pool size: 20 (min=1)
+2025-06-23 12:18:02 [Thread-0] INFO  org.hibernate.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.0.Final
+2025-06-23 12:18:02 [Thread-0] INFO  org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-06-23 12:18:02 [Thread-0] INFO  org.hibernate.orm.connections.access - HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@34c4d2aa] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
+2025-06-23 12:18:02 [Thread-0] TRACE mpp.persistance.repository.UserDbRepo - Exit with([mpp.model.User@93e8df, mpp.model.User@1cac008c])
+2025-06-23 12:18:02 [JavaFX Application Thread] INFO  mpp.client.gui.LoginController - a gasit ceva
+2025-06-23 12:18:03 [Thread-0] TRACE mpp.persistance.repository.ConfiguratieDbRepo - Enter Finding all configuratii
+2025-06-23 12:18:03 [Thread-0] TRACE mpp.persistance.repository.ConfiguratieDbRepo - Exit with([mpp.model.Configuratie@4cbdabc5, mpp.model.Configuratie@393f7c82])
+2025-06-23 12:19:00 [main] INFO  mpp.StartJsonServer - Server starting ...
+2025-06-23 12:19:00 [main] INFO  mpp.persistance.repository.JocDbRepo - Initializing UtilizatorRepo with properties: {server.port=55556, jdbc.url=jdbc:sqlite:dbs4din2024.db, jdbc.driver=org.sqlite.JDBC} 
+2025-06-23 12:19:00 [main] INFO  mpp.server.ServicesImpl - Initializing ServicesImpl
+2025-06-23 12:19:09 [JavaFX Application Thread] INFO  mpp.client.StartJsonClient - In start
+2025-06-23 12:19:12 [Thread-0] TRACE mpp.persistance.repository.UserDbRepo - Enter Finding all users
+2025-06-23 12:19:12 [Thread-0] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.4.4.Final
+2025-06-23 12:19:12 [Thread-0] INFO  org.hibernate.cfg.Environment - HHH000205: Loaded properties from resource hibernate.properties: {hibernate.format_sql=true, jakarta.persistence.jdbc.driver=org.sqlite.JDBC, hibernate.dialect=org.hibernate.community.dialect.SQLiteDialect, hibernate.highlight_sql=true, jakarta.persistence.jdbc.url=jdbc:sqlite:dbs4din2024.db, hibernate.show_sql=true, jakarta.persistence.schema-generation.database.action=update}
+2025-06-23 12:19:12 [Thread-0] INFO  org.hibernate.cache.internal.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2025-06-23 12:19:13 [Thread-0] WARN  org.hibernate.orm.connections.pooling - HHH10001002: Using built-in connection pool (not intended for production use)
+2025-06-23 12:19:13 [Thread-0] INFO  org.hibernate.orm.connections.pooling - HHH10001005: Loaded JDBC driver class: org.sqlite.JDBC
+2025-06-23 12:19:13 [Thread-0] INFO  org.hibernate.orm.connections.pooling - HHH10001012: Connecting with JDBC URL [jdbc:sqlite:dbs4din2024.db]
+2025-06-23 12:19:13 [Thread-0] INFO  org.hibernate.orm.connections.pooling - HHH10001001: Connection properties: {}
+2025-06-23 12:19:13 [Thread-0] INFO  org.hibernate.orm.connections.pooling - HHH10001003: Autocommit mode: false
+2025-06-23 12:19:13 [Thread-0] INFO  org.hibernate.orm.connections.pooling - HHH10001115: Connection pool size: 20 (min=1)
+2025-06-23 12:19:13 [Thread-0] INFO  org.hibernate.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.0.Final
+2025-06-23 12:19:14 [Thread-0] INFO  org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-06-23 12:19:14 [Thread-0] INFO  org.hibernate.orm.connections.access - HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@27be67fb] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
+2025-06-23 12:19:14 [Thread-0] TRACE mpp.persistance.repository.UserDbRepo - Exit with([mpp.model.User@65d1096d, mpp.model.User@7c024953])
+2025-06-23 12:19:14 [JavaFX Application Thread] INFO  mpp.client.gui.LoginController - a gasit ceva
+2025-06-23 12:19:15 [Thread-0] TRACE mpp.persistance.repository.ConfiguratieDbRepo - Enter Finding all configuratii
+2025-06-23 12:19:15 [Thread-0] TRACE mpp.persistance.repository.ConfiguratieDbRepo - Exit with([mpp.model.Configuratie@14852993, mpp.model.Configuratie@56d2ed74])
+2025-06-23 12:21:14 [main] INFO  mpp.StartJsonServer - Server starting ...
+2025-06-23 12:21:14 [main] INFO  mpp.persistance.repository.JocDbRepo - Initializing UtilizatorRepo with properties: {server.port=55556, jdbc.url=jdbc:sqlite:dbs4din2024.db, jdbc.driver=org.sqlite.JDBC} 
+2025-06-23 12:21:14 [main] INFO  mpp.server.ServicesImpl - Initializing ServicesImpl
+2025-06-23 12:21:17 [JavaFX Application Thread] INFO  mpp.client.StartJsonClient - In start
+2025-06-23 12:21:22 [Thread-0] TRACE mpp.persistance.repository.UserDbRepo - Enter Finding all users
+2025-06-23 12:21:22 [Thread-0] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.4.4.Final
+2025-06-23 12:21:22 [Thread-0] INFO  org.hibernate.cfg.Environment - HHH000205: Loaded properties from resource hibernate.properties: {hibernate.format_sql=true, jakarta.persistence.jdbc.driver=org.sqlite.JDBC, hibernate.dialect=org.hibernate.community.dialect.SQLiteDialect, hibernate.highlight_sql=true, jakarta.persistence.jdbc.url=jdbc:sqlite:dbs4din2024.db, hibernate.show_sql=true, jakarta.persistence.schema-generation.database.action=update}
+2025-06-23 12:21:22 [Thread-0] INFO  org.hibernate.cache.internal.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2025-06-23 12:21:22 [Thread-0] WARN  org.hibernate.orm.connections.pooling - HHH10001002: Using built-in connection pool (not intended for production use)
+2025-06-23 12:21:22 [Thread-0] INFO  org.hibernate.orm.connections.pooling - HHH10001005: Loaded JDBC driver class: org.sqlite.JDBC
+2025-06-23 12:21:22 [Thread-0] INFO  org.hibernate.orm.connections.pooling - HHH10001012: Connecting with JDBC URL [jdbc:sqlite:dbs4din2024.db]
+2025-06-23 12:21:22 [Thread-0] INFO  org.hibernate.orm.connections.pooling - HHH10001001: Connection properties: {}
+2025-06-23 12:21:22 [Thread-0] INFO  org.hibernate.orm.connections.pooling - HHH10001003: Autocommit mode: false
+2025-06-23 12:21:22 [Thread-0] INFO  org.hibernate.orm.connections.pooling - HHH10001115: Connection pool size: 20 (min=1)
+2025-06-23 12:21:23 [Thread-0] INFO  org.hibernate.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.0.Final
+2025-06-23 12:21:23 [Thread-0] INFO  org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-06-23 12:21:23 [Thread-0] INFO  org.hibernate.orm.connections.access - HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@784c995b] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
+2025-06-23 12:21:24 [Thread-0] TRACE mpp.persistance.repository.UserDbRepo - Exit with([mpp.model.User@15321ff4, mpp.model.User@40283dfb])
+2025-06-23 12:21:24 [JavaFX Application Thread] INFO  mpp.client.gui.LoginController - a gasit ceva
+2025-06-23 12:21:25 [Thread-0] TRACE mpp.persistance.repository.ConfiguratieDbRepo - Enter Finding all configuratii
+2025-06-23 12:21:25 [Thread-0] TRACE mpp.persistance.repository.ConfiguratieDbRepo - Exit with([mpp.model.Configuratie@7c568d76, mpp.model.Configuratie@1076dcd8])
+2025-06-23 12:21:52 [Thread-0] TRACE mpp.persistance.repository.JocDbRepo - Enter Saving game mpp.model.Joc@755d8950
+2025-06-23 12:21:52 [Thread-0] TRACE mpp.persistance.repository.JocDbRepo - Saved game with ID: 1
+2025-06-23 12:21:53 [Thread-0] TRACE mpp.persistance.repository.JocDbRepo - Enter Getting all games
+2025-06-23 12:21:53 [Thread-0] ERROR mpp.persistance.repository.JocDbRepo - org.sqlite.SQLiteException: [SQLITE_ERROR] SQL error or missing database (no such column: J.numarPuncte)
+2025-06-23 12:21:53 [Thread-0] TRACE mpp.persistance.repository.JocDbRepo - Exit with([])
+2025-06-23 12:24:18 [main] INFO  mpp.StartJsonServer - Server starting ...
+2025-06-23 12:24:18 [main] INFO  mpp.persistance.repository.JocDbRepo - Initializing UtilizatorRepo with properties: {server.port=55556, jdbc.url=jdbc:sqlite:dbs4din2024.db, jdbc.driver=org.sqlite.JDBC} 
+2025-06-23 12:24:18 [main] INFO  mpp.server.ServicesImpl - Initializing ServicesImpl
+2025-06-23 12:24:24 [JavaFX Application Thread] INFO  mpp.client.StartJsonClient - In start
+2025-06-23 12:24:28 [Thread-0] TRACE mpp.persistance.repository.UserDbRepo - Enter Finding all users
+2025-06-23 12:24:28 [Thread-0] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.4.4.Final
+2025-06-23 12:24:28 [Thread-0] INFO  org.hibernate.cfg.Environment - HHH000205: Loaded properties from resource hibernate.properties: {hibernate.format_sql=true, jakarta.persistence.jdbc.driver=org.sqlite.JDBC, hibernate.dialect=org.hibernate.community.dialect.SQLiteDialect, hibernate.highlight_sql=true, jakarta.persistence.jdbc.url=jdbc:sqlite:dbs4din2024.db, hibernate.show_sql=true, jakarta.persistence.schema-generation.database.action=update}
+2025-06-23 12:24:28 [Thread-0] INFO  org.hibernate.cache.internal.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2025-06-23 12:24:28 [Thread-0] WARN  org.hibernate.orm.connections.pooling - HHH10001002: Using built-in connection pool (not intended for production use)
+2025-06-23 12:24:28 [Thread-0] INFO  org.hibernate.orm.connections.pooling - HHH10001005: Loaded JDBC driver class: org.sqlite.JDBC
+2025-06-23 12:24:28 [Thread-0] INFO  org.hibernate.orm.connections.pooling - HHH10001012: Connecting with JDBC URL [jdbc:sqlite:dbs4din2024.db]
+2025-06-23 12:24:28 [Thread-0] INFO  org.hibernate.orm.connections.pooling - HHH10001001: Connection properties: {}
+2025-06-23 12:24:28 [Thread-0] INFO  org.hibernate.orm.connections.pooling - HHH10001003: Autocommit mode: false
+2025-06-23 12:24:28 [Thread-0] INFO  org.hibernate.orm.connections.pooling - HHH10001115: Connection pool size: 20 (min=1)
+2025-06-23 12:24:29 [Thread-0] INFO  org.hibernate.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.0.Final
+2025-06-23 12:24:29 [Thread-0] INFO  org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-06-23 12:24:29 [Thread-0] INFO  org.hibernate.orm.connections.access - HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@797063b] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
+2025-06-23 12:24:29 [Thread-0] TRACE mpp.persistance.repository.UserDbRepo - Exit with([mpp.model.User@6e9a85c1, mpp.model.User@35df494a])
+2025-06-23 12:24:29 [JavaFX Application Thread] INFO  mpp.client.gui.LoginController - a gasit ceva
+2025-06-23 12:24:30 [Thread-0] TRACE mpp.persistance.repository.ConfiguratieDbRepo - Enter Finding all configuratii
+2025-06-23 12:24:30 [Thread-0] TRACE mpp.persistance.repository.ConfiguratieDbRepo - Exit with([mpp.model.Configuratie@62215034, mpp.model.Configuratie@172baf37])
+2025-06-23 12:25:35 [Thread-0] TRACE mpp.persistance.repository.JocDbRepo - Enter Saving game mpp.model.Joc@7ad1da1
+2025-06-23 12:25:35 [Thread-0] TRACE mpp.persistance.repository.JocDbRepo - Saved game with ID: 2
+2025-06-23 12:25:36 [Thread-0] TRACE mpp.persistance.repository.JocDbRepo - Enter Getting all games
+2025-06-23 12:25:36 [Thread-0] ERROR mpp.persistance.repository.JocDbRepo - org.sqlite.SQLiteException: [SQLITE_ERROR] SQL error or missing database (no such column: J.numarPuncte)
+2025-06-23 12:25:36 [Thread-0] TRACE mpp.persistance.repository.JocDbRepo - Exit with([])
+2025-06-23 12:31:33 [main] INFO  mpp.StartJsonServer - Server starting ...
+2025-06-23 12:31:33 [main] INFO  mpp.persistance.repository.JocDbRepo - Initializing UtilizatorRepo with properties: {server.port=55556, jdbc.url=jdbc:sqlite:dbs4din2024.db, jdbc.driver=org.sqlite.JDBC} 
+2025-06-23 12:31:33 [main] INFO  mpp.server.ServicesImpl - Initializing ServicesImpl
+2025-06-23 12:31:43 [JavaFX Application Thread] INFO  mpp.client.StartJsonClient - In start
+2025-06-23 12:31:56 [JavaFX Application Thread] INFO  mpp.client.StartJsonClient - In start
+2025-06-23 12:31:57 [Thread-0] TRACE mpp.persistance.repository.UserDbRepo - Enter Finding all users
+2025-06-23 12:31:57 [Thread-0] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.4.4.Final
+2025-06-23 12:31:57 [Thread-0] INFO  org.hibernate.cfg.Environment - HHH000205: Loaded properties from resource hibernate.properties: {hibernate.format_sql=true, jakarta.persistence.jdbc.driver=org.sqlite.JDBC, hibernate.dialect=org.hibernate.community.dialect.SQLiteDialect, hibernate.highlight_sql=true, jakarta.persistence.jdbc.url=jdbc:sqlite:dbs4din2024.db, hibernate.show_sql=true, jakarta.persistence.schema-generation.database.action=update}
+2025-06-23 12:31:57 [Thread-0] INFO  org.hibernate.cache.internal.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2025-06-23 12:31:57 [Thread-0] WARN  org.hibernate.orm.connections.pooling - HHH10001002: Using built-in connection pool (not intended for production use)
+2025-06-23 12:31:57 [Thread-0] INFO  org.hibernate.orm.connections.pooling - HHH10001005: Loaded JDBC driver class: org.sqlite.JDBC
+2025-06-23 12:31:57 [Thread-0] INFO  org.hibernate.orm.connections.pooling - HHH10001012: Connecting with JDBC URL [jdbc:sqlite:dbs4din2024.db]
+2025-06-23 12:31:57 [Thread-0] INFO  org.hibernate.orm.connections.pooling - HHH10001001: Connection properties: {}
+2025-06-23 12:31:57 [Thread-0] INFO  org.hibernate.orm.connections.pooling - HHH10001003: Autocommit mode: false
+2025-06-23 12:31:57 [Thread-0] INFO  org.hibernate.orm.connections.pooling - HHH10001115: Connection pool size: 20 (min=1)
+2025-06-23 12:31:58 [Thread-0] INFO  org.hibernate.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.0.Final
+2025-06-23 12:31:58 [Thread-0] INFO  org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-06-23 12:31:58 [Thread-0] INFO  org.hibernate.orm.connections.access - HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@3e73a4f1] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
+2025-06-23 12:31:59 [Thread-0] TRACE mpp.persistance.repository.UserDbRepo - Exit with([mpp.model.User@28208ec1, mpp.model.User@38ff593f])
+2025-06-23 12:31:59 [JavaFX Application Thread] INFO  mpp.client.gui.LoginController - a gasit ceva
+2025-06-23 12:32:00 [Thread-0] TRACE mpp.persistance.repository.ConfiguratieDbRepo - Enter Finding all configuratii
+2025-06-23 12:32:00 [Thread-0] TRACE mpp.persistance.repository.ConfiguratieDbRepo - Exit with([mpp.model.Configuratie@6c05ce61, mpp.model.Configuratie@517a1a8b])
+2025-06-23 12:32:01 [Thread-0] TRACE mpp.persistance.repository.JocDbRepo - Enter Getting all games
+2025-06-23 12:32:01 [Thread-0] ERROR mpp.persistance.repository.JocDbRepo - org.sqlite.SQLiteException: [SQLITE_ERROR] SQL error or missing database (no such column: J.numarPuncte)
+2025-06-23 12:32:01 [Thread-0] TRACE mpp.persistance.repository.JocDbRepo - Exit with([])
+2025-06-23 12:35:58 [main] INFO  mpp.StartJsonServer - Server starting ...
+2025-06-23 12:35:58 [main] INFO  mpp.persistance.repository.JocDbRepo - Initializing UtilizatorRepo with properties: {server.port=55556, jdbc.url=jdbc:sqlite:dbs4din2024.db, jdbc.driver=org.sqlite.JDBC} 
+2025-06-23 12:35:58 [main] INFO  mpp.server.ServicesImpl - Initializing ServicesImpl
+2025-06-23 12:36:04 [JavaFX Application Thread] INFO  mpp.client.StartJsonClient - In start
+2025-06-23 12:36:15 [Thread-0] TRACE mpp.persistance.repository.UserDbRepo - Enter Finding all users
+2025-06-23 12:36:15 [Thread-0] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.4.4.Final
+2025-06-23 12:36:15 [Thread-0] INFO  org.hibernate.cfg.Environment - HHH000205: Loaded properties from resource hibernate.properties: {hibernate.format_sql=true, jakarta.persistence.jdbc.driver=org.sqlite.JDBC, hibernate.dialect=org.hibernate.community.dialect.SQLiteDialect, hibernate.highlight_sql=true, jakarta.persistence.jdbc.url=jdbc:sqlite:dbs4din2024.db, hibernate.show_sql=true, jakarta.persistence.schema-generation.database.action=update}
+2025-06-23 12:36:15 [Thread-0] INFO  org.hibernate.cache.internal.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2025-06-23 12:36:15 [Thread-0] WARN  org.hibernate.orm.connections.pooling - HHH10001002: Using built-in connection pool (not intended for production use)
+2025-06-23 12:36:15 [Thread-0] INFO  org.hibernate.orm.connections.pooling - HHH10001005: Loaded JDBC driver class: org.sqlite.JDBC
+2025-06-23 12:36:15 [Thread-0] INFO  org.hibernate.orm.connections.pooling - HHH10001012: Connecting with JDBC URL [jdbc:sqlite:dbs4din2024.db]
+2025-06-23 12:36:15 [Thread-0] INFO  org.hibernate.orm.connections.pooling - HHH10001001: Connection properties: {}
+2025-06-23 12:36:15 [Thread-0] INFO  org.hibernate.orm.connections.pooling - HHH10001003: Autocommit mode: false
+2025-06-23 12:36:15 [Thread-0] INFO  org.hibernate.orm.connections.pooling - HHH10001115: Connection pool size: 20 (min=1)
+2025-06-23 12:36:16 [Thread-0] INFO  org.hibernate.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.0.Final
+2025-06-23 12:36:17 [JavaFX Application Thread] INFO  mpp.client.StartJsonClient - In start
+2025-06-23 12:36:17 [Thread-0] INFO  org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-06-23 12:36:17 [Thread-0] INFO  org.hibernate.orm.connections.access - HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@445e2086] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
+2025-06-23 12:36:18 [Thread-0] TRACE mpp.persistance.repository.UserDbRepo - Exit with([mpp.model.User@19fea9ac, mpp.model.User@20d98e1])
+2025-06-23 12:36:18 [JavaFX Application Thread] INFO  mpp.client.gui.LoginController - a gasit ceva
+2025-06-23 12:36:19 [Thread-0] TRACE mpp.persistance.repository.ConfiguratieDbRepo - Enter Finding all configuratii
+2025-06-23 12:36:19 [Thread-0] TRACE mpp.persistance.repository.ConfiguratieDbRepo - Exit with([mpp.model.Configuratie@26cbd3fb, mpp.model.Configuratie@3e97770a])
+2025-06-23 12:36:20 [Thread-0] TRACE mpp.persistance.repository.JocDbRepo - Enter Getting all games
+2025-06-23 12:36:20 [Thread-0] TRACE mpp.persistance.repository.JocDbRepo - Exit with([mpp.model.Joc@1fe096e0])
+2025-06-23 12:36:26 [Thread-2] TRACE mpp.persistance.repository.UserDbRepo - Enter Finding all users
+2025-06-23 12:36:26 [Thread-2] TRACE mpp.persistance.repository.UserDbRepo - Exit with([mpp.model.User@7fccafa2, mpp.model.User@786c03d2])
+2025-06-23 12:36:26 [JavaFX Application Thread] INFO  mpp.client.gui.LoginController - a gasit ceva
+2025-06-23 12:36:27 [Thread-2] TRACE mpp.persistance.repository.ConfiguratieDbRepo - Enter Finding all configuratii
+2025-06-23 12:36:27 [Thread-2] TRACE mpp.persistance.repository.ConfiguratieDbRepo - Exit with([mpp.model.Configuratie@7c229f0f, mpp.model.Configuratie@cc5a9f])
+2025-06-23 12:36:28 [Thread-2] TRACE mpp.persistance.repository.JocDbRepo - Enter Getting all games
+2025-06-23 12:36:28 [Thread-2] TRACE mpp.persistance.repository.JocDbRepo - Exit with([mpp.model.Joc@2a994f49])
+2025-06-23 12:36:44 [Thread-2] TRACE mpp.persistance.repository.JocDbRepo - Enter Saving game mpp.model.Joc@5b2c86
+2025-06-23 12:36:44 [Thread-2] TRACE mpp.persistance.repository.JocDbRepo - Saved game with ID: 3
+2025-06-23 12:36:44 [Thread-0] TRACE mpp.persistance.repository.JocDbRepo - Enter Getting all games
+2025-06-23 12:36:44 [Thread-0] TRACE mpp.persistance.repository.JocDbRepo - Exit with([mpp.model.Joc@4b93cad5, mpp.model.Joc@50df02d1])
+2025-06-23 12:36:45 [Thread-2] TRACE mpp.persistance.repository.JocDbRepo - Enter Getting all games
+2025-06-23 12:36:45 [Thread-2] TRACE mpp.persistance.repository.JocDbRepo - Exit with([mpp.model.Joc@4112853f, mpp.model.Joc@2aaf25ed])
+2025-06-23 12:36:46 [Thread-2] TRACE mpp.persistance.repository.JocDbRepo - Enter Getting all games
+2025-06-23 12:36:46 [Thread-2] TRACE mpp.persistance.repository.JocDbRepo - Exit with([mpp.model.Joc@4267f11a, mpp.model.Joc@1709af14])
+2025-06-23 12:37:09 [Thread-0] TRACE mpp.persistance.repository.JocDbRepo - Enter Saving game mpp.model.Joc@10112a6a
+2025-06-23 12:37:09 [Thread-0] TRACE mpp.persistance.repository.JocDbRepo - Saved game with ID: 4
+2025-06-23 12:37:09 [Thread-2] TRACE mpp.persistance.repository.JocDbRepo - Enter Getting all games
+2025-06-23 12:37:09 [Thread-2] TRACE mpp.persistance.repository.JocDbRepo - Exit with([mpp.model.Joc@12762dcd, mpp.model.Joc@6f64e1b8, mpp.model.Joc@35cf824f])
+2025-06-23 12:37:10 [Thread-0] TRACE mpp.persistance.repository.JocDbRepo - Enter Getting all games
+2025-06-23 12:37:10 [Thread-0] TRACE mpp.persistance.repository.JocDbRepo - Exit with([mpp.model.Joc@4016cf43, mpp.model.Joc@6877841a, mpp.model.Joc@712ca104])
+2025-06-23 12:37:11 [Thread-0] TRACE mpp.persistance.repository.JocDbRepo - Enter Getting all games
+2025-06-23 12:37:11 [Thread-0] TRACE mpp.persistance.repository.JocDbRepo - Exit with([mpp.model.Joc@21c400d0, mpp.model.Joc@75c717a6, mpp.model.Joc@6177ac9b])
+2025-06-23 15:58:41 [main] INFO  mpp.StartJsonServer - Server starting ...
+2025-06-23 15:58:41 [main] INFO  mpp.persistance.repository.JocDbRepo - Initializing UtilizatorRepo with properties: {server.port=55556, jdbc.url=jdbc:sqlite:dbs4din2024.db, jdbc.driver=org.sqlite.JDBC} 
+2025-06-23 15:58:41 [main] INFO  mpp.server.ServicesImpl - Initializing ServicesImpl
+2025-06-23 15:58:50 [JavaFX Application Thread] INFO  mpp.client.StartJsonClient - In start
+2025-06-23 15:58:54 [Thread-0] TRACE mpp.persistance.repository.UserDbRepo - Enter Finding all users
+2025-06-23 15:58:54 [Thread-0] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.4.4.Final
+2025-06-23 15:58:54 [Thread-0] INFO  org.hibernate.cfg.Environment - HHH000205: Loaded properties from resource hibernate.properties: {hibernate.format_sql=true, jakarta.persistence.jdbc.driver=org.sqlite.JDBC, hibernate.dialect=org.hibernate.community.dialect.SQLiteDialect, hibernate.highlight_sql=true, jakarta.persistence.jdbc.url=jdbc:sqlite:dbs4din2024.db, hibernate.show_sql=true, jakarta.persistence.schema-generation.database.action=update}
+2025-06-23 15:58:54 [Thread-0] INFO  org.hibernate.cache.internal.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2025-06-23 15:58:54 [Thread-0] WARN  org.hibernate.orm.connections.pooling - HHH10001002: Using built-in connection pool (not intended for production use)
+2025-06-23 15:58:54 [Thread-0] INFO  org.hibernate.orm.connections.pooling - HHH10001005: Loaded JDBC driver class: org.sqlite.JDBC
+2025-06-23 15:58:54 [Thread-0] INFO  org.hibernate.orm.connections.pooling - HHH10001012: Connecting with JDBC URL [jdbc:sqlite:dbs4din2024.db]
+2025-06-23 15:58:54 [Thread-0] INFO  org.hibernate.orm.connections.pooling - HHH10001001: Connection properties: {}
+2025-06-23 15:58:54 [Thread-0] INFO  org.hibernate.orm.connections.pooling - HHH10001003: Autocommit mode: false
+2025-06-23 15:58:54 [Thread-0] INFO  org.hibernate.orm.connections.pooling - HHH10001115: Connection pool size: 20 (min=1)
+2025-06-23 15:58:54 [Thread-0] INFO  org.hibernate.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.0.Final
+2025-06-23 15:58:55 [Thread-0] INFO  org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-06-23 15:58:55 [Thread-0] INFO  org.hibernate.orm.connections.access - HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@1ca6be7e] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
+2025-06-23 15:58:55 [Thread-0] TRACE mpp.persistance.repository.UserDbRepo - Exit with([mpp.model.User@56a59c36, mpp.model.User@585874b3])
+2025-06-23 15:58:55 [JavaFX Application Thread] INFO  mpp.client.gui.LoginController - a gasit ceva
+2025-06-23 15:58:56 [Thread-0] TRACE mpp.persistance.repository.ConfiguratieDbRepo - Enter Finding all configuratii
+2025-06-23 15:58:56 [Thread-0] TRACE mpp.persistance.repository.ConfiguratieDbRepo - Exit with([mpp.model.Configuratie@679858c3, mpp.model.Configuratie@1261152b])
+2025-06-23 15:58:57 [Thread-0] TRACE mpp.persistance.repository.JocDbRepo - Enter Getting all games
+2025-06-23 15:58:57 [Thread-0] TRACE mpp.persistance.repository.JocDbRepo - Exit with([mpp.model.Joc@14150214, mpp.model.Joc@1dbcb02, mpp.model.Joc@45af6182])
+2025-06-23 15:59:11 [Thread-0] TRACE mpp.persistance.repository.JocDbRepo - Enter Saving game mpp.model.Joc@4cd17a7a
+2025-06-23 15:59:11 [Thread-0] TRACE mpp.persistance.repository.JocDbRepo - Saved game with ID: 5
+2025-06-23 15:59:12 [Thread-0] TRACE mpp.persistance.repository.JocDbRepo - Enter Getting all games
+2025-06-23 15:59:12 [Thread-0] TRACE mpp.persistance.repository.JocDbRepo - Exit with([mpp.model.Joc@f57835f, mpp.model.Joc@65e0d674, mpp.model.Joc@207c4cdc, mpp.model.Joc@fd0c778])
+2025-06-23 15:59:13 [Thread-0] TRACE mpp.persistance.repository.JocDbRepo - Enter Getting all games
+2025-06-23 15:59:13 [Thread-0] TRACE mpp.persistance.repository.JocDbRepo - Exit with([mpp.model.Joc@5f9ed231, mpp.model.Joc@1d466fb2, mpp.model.Joc@14249065, mpp.model.Joc@5f447987])
+2025-06-24 12:45:45 [main] INFO  mpp.StartJsonServer - Server starting ...
+2025-06-24 12:45:45 [main] INFO  mpp.persistance.repository.JocDbRepo - Initializing UtilizatorRepo with properties: {server.port=55556, jdbc.url=jdbc:sqlite:dbs4din2024.db, jdbc.driver=org.sqlite.JDBC} 
+2025-06-24 12:45:45 [main] INFO  mpp.server.ServicesImpl - Initializing ServicesImpl
+2025-06-24 12:45:49 [JavaFX Application Thread] INFO  mpp.client.StartJsonClient - In start
+2025-06-24 12:45:53 [Thread-0] TRACE mpp.persistance.repository.UserDbRepo - Enter Finding all users
+2025-06-24 12:45:53 [Thread-0] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.4.4.Final
+2025-06-24 12:45:53 [Thread-0] INFO  org.hibernate.cfg.Environment - HHH000205: Loaded properties from resource hibernate.properties: {hibernate.format_sql=true, jakarta.persistence.jdbc.driver=org.sqlite.JDBC, hibernate.dialect=org.hibernate.community.dialect.SQLiteDialect, hibernate.highlight_sql=true, jakarta.persistence.jdbc.url=jdbc:sqlite:dbs4din2024.db, hibernate.show_sql=true, jakarta.persistence.schema-generation.database.action=update}
+2025-06-24 12:45:53 [Thread-0] INFO  org.hibernate.cache.internal.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2025-06-24 12:45:54 [Thread-0] WARN  org.hibernate.orm.connections.pooling - HHH10001002: Using built-in connection pool (not intended for production use)
+2025-06-24 12:45:54 [Thread-0] INFO  org.hibernate.orm.connections.pooling - HHH10001005: Loaded JDBC driver class: org.sqlite.JDBC
+2025-06-24 12:45:54 [Thread-0] INFO  org.hibernate.orm.connections.pooling - HHH10001012: Connecting with JDBC URL [jdbc:sqlite:dbs4din2024.db]
+2025-06-24 12:45:54 [Thread-0] INFO  org.hibernate.orm.connections.pooling - HHH10001001: Connection properties: {}
+2025-06-24 12:45:54 [Thread-0] INFO  org.hibernate.orm.connections.pooling - HHH10001003: Autocommit mode: false
+2025-06-24 12:45:54 [Thread-0] INFO  org.hibernate.orm.connections.pooling - HHH10001115: Connection pool size: 20 (min=1)
+2025-06-24 12:45:54 [Thread-0] INFO  org.hibernate.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.0.Final
+2025-06-24 12:45:55 [Thread-0] INFO  org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-06-24 12:45:55 [Thread-0] INFO  org.hibernate.orm.connections.access - HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@1a246cf5] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
+2025-06-24 12:45:55 [Thread-0] TRACE mpp.persistance.repository.UserDbRepo - Exit with([mpp.model.User@21dc62d9, mpp.model.User@75f8458a])
+2025-06-24 12:45:55 [JavaFX Application Thread] INFO  mpp.client.gui.LoginController - a gasit ceva
+2025-06-24 12:45:56 [Thread-0] TRACE mpp.persistance.repository.ConfiguratieDbRepo - Enter Finding all configuratii
+2025-06-24 12:45:56 [Thread-0] TRACE mpp.persistance.repository.ConfiguratieDbRepo - Exit with([mpp.model.Configuratie@1bd5f6cb, mpp.model.Configuratie@44b5bd6a])
+2025-06-24 12:45:57 [Thread-0] TRACE mpp.persistance.repository.JocDbRepo - Enter Getting all games
+2025-06-24 12:45:57 [Thread-0] TRACE mpp.persistance.repository.JocDbRepo - Exit with([mpp.model.Joc@60b01658, mpp.model.Joc@536dd8ad, mpp.model.Joc@1da6bd8d, mpp.model.Joc@4119b0ea])
+2025-06-24 12:46:09 [Thread-0] TRACE mpp.persistance.repository.JocDbRepo - Enter Saving game mpp.model.Joc@1a1293ee
+2025-06-24 12:46:09 [Thread-0] TRACE mpp.persistance.repository.JocDbRepo - Saved game with ID: 6
+2025-06-24 12:46:10 [Thread-0] TRACE mpp.persistance.repository.JocDbRepo - Enter Getting all games
+2025-06-24 12:46:10 [Thread-0] TRACE mpp.persistance.repository.JocDbRepo - Exit with([mpp.model.Joc@5356f07d, mpp.model.Joc@f64a474, mpp.model.Joc@328b913a, mpp.model.Joc@1a1daa5d, mpp.model.Joc@7eac647b])
+2025-06-24 12:46:11 [Thread-0] TRACE mpp.persistance.repository.JocDbRepo - Enter Getting all games
+2025-06-24 12:46:11 [Thread-0] TRACE mpp.persistance.repository.JocDbRepo - Exit with([mpp.model.Joc@3a2d613d, mpp.model.Joc@4d957b67, mpp.model.Joc@50074112, mpp.model.Joc@ddd1414, mpp.model.Joc@5c28b81b])
